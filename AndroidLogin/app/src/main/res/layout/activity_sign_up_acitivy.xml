@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SignUpActivity">
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <!-- EditText Full Name -->
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_margin="20dp"
+        android:hint="Full Name"
+        android:backgroundTint="@color/black"
+        android:inputType="text" />
+
+    <!-- EditText Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFullName"
+        android:layout_margin="20dp"
+        android:hint="Username"
+        android:backgroundTint="@color/black"
+        android:inputType="textEmailAddress" />
+
+    <!-- EditText New Password -->
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_margin="20dp"
+        android:hint="New Password"
+        android:backgroundTint="@color/black"
+        android:inputType="textPassword" />
+
+    <!-- EditText Confirm Password -->
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewPassword"
+        android:layout_margin="20dp"
+        android:hint="Confirm Password"
+        android:backgroundTint="@color/black"
+        android:inputType="textPassword" />
+
+    <!-- Button Register -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_margin="20dp"
+        android:text="Register"
+        android:background="@color/black"
+        android:textColor="#FFFFFF" />
+
+    <!-- ImageButton Back -->
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+</RelativeLayout>
